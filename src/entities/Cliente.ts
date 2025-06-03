@@ -32,5 +32,5 @@ export class Cliente {
     cuit_cuil: string;
 
     @CreateDateColumn()
-    fecha_alta: Date;
+    fecha_alta: Date = new Date(); // Inicializa la fecha de alta con la fecha actual
 }
